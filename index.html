@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My landing page</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <!-- We need this line below for responsiveness! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- code a Hero / Banner section / un peu comme un header-->
+  <div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1582883044880-974679bc1f0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+    <div class="hero-container">
+      <h1><span id="logo">La fromagerie</span> </h1>
+      <p>Venez gouter au meilleur fromage suisse !</p>
+      <a href="#" class="cta">Notre communauté fan de fromage</a>
+      <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+  </div>
+  <!-- code a "How it works" section -->
+  <section id="hero">
+    <div class="container">
+      <h2>Découvrez les meilleurs fromages suisses</h2>
+        <p>Authentiques, savoureux et artisanaux.</p>
+          <a href="#products" class="btn">Voir les fromages !</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>À propos de nous</h2>
+        <p>Nous sommes une boutique dédiée à la vente des meilleurs fromages suisses.Séléctionné par des passionnés, nos fromages incarnent la perfection tant recherchée dans le monde du fromage.</p>
+    </section>
+    <section id="products">
+        <div class="container">
+            <h2>Nos délicieux produits</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                  <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/89678258/3738869366.jpg" class="image-fromage">
+                  <h3>Le gruyère</h3>
+                    <p>Le célèbre gruyère, fromage star, élu meilleur fromage au monde par nos clients depuis 20 ans!</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.emmentaler.ch/wp-content/uploads/2023/01/EM_SAPOY_pack.png" alt="Emmental 2" class="image-fromage">
+                    <h3>l'Emmental</h3>
+                    <p>Le très cher Emmental, le fromage adoré de nos clients ! Il se déguste savoureusement avec un morceau de pain.</p>
+                </div>
+                <div class="product-card">
+                  <img src="https://img.cuisineaz.com/1200x675/2022/07/08/i184605-shutterstock-469793669-min.webp" class="image-fromage">
+                    <h3>Le parmesan</h3>
+                    <p>Un fromage qui réveille les babines !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+          <h2>Découvrez nos Vaches</h2>
+          <div class="blog-grid">
+              <div class="blog-card">
+                  <img src="https://images.unsplash.com/photo-1564085352725-08da0272627d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y293fGVufDB8fDB8fHwy" alt="Marguerite la Number one !" class="image-vache">
+                  <h3>Marguerite</h3>
+                  <p>Marguerite produit le lait utilisé dans la fabrication de votre gruyère depuis 12 ans !</p>
+              </div>
+              <div class="blog-card">
+                  <img src="https://images.unsplash.com/photo-1618080206739-14e8ac105472?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bernadette la N°2" class="image-vache">
+                  <h3>Bernadette</h3>
+                  <p>Bernadette est notre vache star, elle passe ses journées à manger dans nos pâturages aérés tout en veillant à produire du lait de qualité !</p>
+              </div>
+              <div class="blog-card">
+                  <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y293fGVufDB8fDB8fHwy" alt="Corinne la vache N°3" class="image-vache">
+                  <h3>Corinne</h3>
+                  <p>La grande Corinne est la vache la plus paresseuse ! Elle ne sort manger qu'après 14h et ne produit du lait que les jours fériés!</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- code a footer -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 La fromagerie. Tous droits réservés.</p>
+    </div>
+</footer>
+</body>
+</html>
